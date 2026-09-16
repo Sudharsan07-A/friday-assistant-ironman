@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Application Theme -->
+    <style name="Theme.FridayAssistant" parent="Theme.Material3.Dark">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/gold_primary</item>
+        <item name="colorPrimaryInverse">@color/gold_dark</item>
+        <item name="colorPrimaryContainer">@color/gold_dark</item>
+        <item name="colorOnPrimary">@color/bg_dark_primary</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/red_secondary</item>
+        <item name="colorSecondaryContainer">@color/red_dark</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+
+        <!-- Tertiary color (Arc Reactor) -->
+        <item name="colorTertiary">@color/arc_reactor_blue</item>
+        <item name="colorTertiaryContainer">@color/arc_reactor_dark</item>
+        <item name="colorOnTertiary">@color/text_primary</item>
+
+        <!-- Background and Surface Colors -->
+        <item name="android:colorBackground">@color/bg_dark_primary</item>
+        <item name="colorSurface">@color/bg_dark_secondary</item>
+        <item name="colorSurfaceVariant">@color/bg_dark_tertiary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- Error color -->
+        <item name="colorError">@color/error_red</item>
+        <item name="colorErrorContainer">@color/red_dark</item>
+        <item name="colorOnError">@color/text_primary</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/bg_dark_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/bg_dark_primary</item>
+
+        <!-- Other theme attributes -->
+        <item name="android:windowBackground">@color/bg_dark_primary</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+    <!-- No Action Bar Theme -->
+    <style name="Theme.FridayAssistant.NoActionBar" parent="Theme.FridayAssistant">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowFullscreen">false</item>
+        <item name="windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="Widget.FridayAssistant.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/gold_primary</item>
+        <item name="android:textColor">@color/bg_dark_primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <!-- Text Input Style -->
+    <style name="Widget.FridayAssistant.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/gold_primary</item>
+        <item name="hintTextColor">@color/gold_primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="Widget.FridayAssistant.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/bg_dark_secondary</item>
+        <item name="strokeColor">@color/gold_primary</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">12dp</item>
+    </style>
+</resources>
