@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark_primary"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FRIDAY ASSISTANT"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/gold_primary"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Online"
+        android:textSize="14sp"
+        android:textColor="@color/success_green"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Speak Button -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btn_speak"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_speak_background"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:scaleType="centerInside"
+            android:tint="@color/gold_primary"
+            android:contentDescription="@string/btn_speak" />
+    </FrameLayout>
+
+    <!-- Response Text -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Awaiting your command, Sir"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:gravity="center"
+                android:minHeight="60dp"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/tv_last_command"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:padding="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:spacing="8dp"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/menu_history"
+            android:textColor="@color/bg_dark_primary"
+            android:backgroundTint="@color/gold_primary"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/menu_settings"
+            android:textColor="@color/bg_dark_primary"
+            android:backgroundTint="@color/gold_primary"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+</LinearLayout>
